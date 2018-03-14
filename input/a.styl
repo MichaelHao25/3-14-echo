@@ -220,6 +220,8 @@ body
 			font-size 14px
 			color #3baefb
 			line-height 1
+			&:hover
+				color #62b883
 	.loading
 		display -webkit-flex
 		display -moz-flex
@@ -458,6 +460,7 @@ body
 			color #00020a
 			line-height 1
 		.down-list
+			display block
 			margin-bottom 20px
 			font-size 14px
 			color #000
@@ -465,6 +468,9 @@ body
 			line-height 70px
 			border 1px solid #e4e6eb
 			background #fff url('../img/pdf.jpg') right 20px center no-repeat
+			&:hover
+				text-decoration underline
+				opacity 0.7
 		.page-control
 			float right
 			padding 30px 0
@@ -510,11 +516,21 @@ body
 		font-size 14px
 		color #00020a
 		.pic
-			padding 50px 0 100px
+			padding 50px 0 0
 			img
 				display block
 				width 100%
-				
+		.ben-load-more
+			display block
+			width 165px
+			height 48px
+			line-height 48px
+			text-align center
+			color #62b883
+			font-size 14px
+			border 1px solid #62b883
+			border-radius 5px
+			margin 0 auto
 		
 .bd-t-b
 	margin 30px 0
