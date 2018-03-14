@@ -1,0 +1,523 @@
+.hcl-head
+	height 222px
+	background url(../img/head-bg.jpg) left top /auto 100% repeat-x
+.hcl-characteristic
+	h5
+		font-size 20px
+		padding-bottom 10px
+.hcl-characteristic
+	// .range
+	// 	flex-direction row
+	// 	justify-content center
+	.col
+		@media (min-width 1300px)
+			flex 1
+	.item
+		margin 0 auto
+		max-width 290px
+		width 100%
+		.pic
+			width 120px
+			height 120px
+			margin 0 auto
+			border 1px solid #64c271
+			border-radius 50%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			justify-content center
+		p
+			color #000
+.hcl-title
+	.line
+		position relative
+		&:after
+			content ""
+			position absolute
+			left 0
+			right 0
+			top 50%
+			border-top 6px solid #64c271
+			margin-top -3px
+			z-index -1
+	h4
+		position relative
+		z-index 1
+		max-width 266px
+		width 50%
+		margin 0 auto
+		line-height 56px
+		background #fff
+		border 1px solid #cccccc
+
+.hcl-content
+	.wrap
+		border 1px solid #cccccc
+		.option
+			height 598px
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-direction column
+			flex-wrap wrap
+			@media (max-width 992px)
+				flex-direction row
+				height auto
+			.item
+				flex 1;
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				border-right 1px solid #cccccc
+				font-size 18px
+				color #000
+				text-indent 2em
+				font-weight 500
+				position relative
+				cursor pointer
+				@media (max-width 991px)
+					flex 0 0 25%
+					height 50px
+					border-right none
+					justify-content center
+					text-indent 0
+				@media (max-width 767px)
+					flex 0 0 50%
+				&+.item
+					border-top 1px solid #cccccc
+					@media (max-width 992px)
+						border-top none
+				&:hover
+				&.active
+					border-right none
+					&:after
+						content ""
+						position absolute
+						bottom 0
+						left 0
+						right 0
+						border-top 2px solid #64c271		
+		.content
+			height 598px
+			overflow hidden
+			@media (max-width 992px)
+				height auto
+			.tabs-item
+				height 598px
+				@media (max-width 992px)
+					height auto
+				.df
+					padding 15px
+					height 100%
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					align-items center
+					justify-content center
+					flex-direction column
+					@media (max-width 992px)
+						height auto
+						padding 30px 15px
+					p
+						animation 1s dropDown
+					.pic
+						animation 1s dropUp
+					img
+						max-width 640px
+						width 100%
+						display block
+
+.hcl-case
+	background #f0f0f2
+	.w1200
+		max-width 1200px
+		margin 0 auto
+	
+@keyframes dropDown
+	0%
+		transform translateY(-50px)
+		opacity 0
+	100%
+		transform translateY(0)
+		opacity 1
+@keyframes dropUp
+	0%
+		transform translateY(50px)
+		opacity 0
+	100%
+		transform translateY(0)
+		opacity 1
+
+
+.hcl-about
+	max-width 1000px
+	margin 0 auto
+	h4
+		font-weight normal
+		margin 0
+	p
+		margin 0
+		color #00020a
+		text-indent 2em
+	img
+		width 100%
+
+
+.section-bottom-25 
+	padding-bottom 25px
+.section-bottom-100
+	padding-bottom 100px
+
+
+.hcl-case
+	.item
+		overflow hidden
+		background #fff
+		&:hover
+			box-shadow 0 0 10px #999
+		.pic
+			display block
+			width 100%
+			a
+				float none
+				margin 0
+				width 100%
+				display blocks
+		.clearfix
+			margin 0
+		img
+			width 100%
+		h3
+			margin 0
+			padding 25px
+			line-height 1
+			font-size 18px
+			color #000
+			box-sizing border-box
+			white-space nowrap
+			text-overflow ellipsis
+			overflow hidden
+			line-height 1
+			font-weight normal
+		a
+			margin 0 26px 40px 0
+			float right
+			font-size 14px
+			color #3baefb
+			line-height 1
+	.loading
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		justify-content center
+		.pacman
+			display none
+		&.active
+			.pacman
+				display block
+		
+
+
+.pacman>div:first-of-type,.pacman>div:nth-child(2) {
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #c9c9c9;
+    border-left: 25px solid #c9c9c9;
+    border-bottom: 25px solid #c9c9c9;
+    border-radius: 25px;
+    position: relative;
+    left: -30px
+}
+
+@-webkit-keyframes rotate_pacman_half_up {
+    0%,100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate_pacman_half_up {
+    0%,100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotate_pacman_half_down {
+    0%,100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@keyframes rotate_pacman_half_down {
+    0%,100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+}
+
+@-webkit-keyframes pacman-balls {
+    75% {
+        opacity: .7
+    }
+
+    100% {
+        -webkit-transform: translate(-100px,-6.25px);
+        transform: translate(-100px,-6.25px)
+    }
+}
+
+@keyframes pacman-balls {
+    75% {
+        opacity: .7
+    }
+
+    100% {
+        -webkit-transform: translate(-100px,-6.25px);
+        transform: translate(-100px,-6.25px)
+    }
+}
+
+.pacman {
+    position: relative
+}
+
+.pacman>div:nth-child(3) {
+    -webkit-animation: pacman-balls 1s -.66s infinite linear;
+    animation: pacman-balls 1s -.66s infinite linear
+}
+
+.pacman>div:nth-child(4) {
+    -webkit-animation: pacman-balls 1s -.33s infinite linear;
+    animation: pacman-balls 1s -.33s infinite linear
+}
+
+.pacman>div:nth-child(5) {
+    -webkit-animation: pacman-balls 1s 0s infinite linear;
+    animation: pacman-balls 1s 0s infinite linear
+}
+
+.pacman>div:first-of-type {
+    -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+    animation: rotate_pacman_half_up .5s 0s infinite
+}
+
+.pacman>div:nth-child(2) {
+    -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+    animation: rotate_pacman_half_down .5s 0s infinite;
+    margin-top: -50px
+}
+
+.pacman>div:nth-child(3),.pacman>div:nth-child(4),.pacman>div:nth-child(5),.pacman>div:nth-child(6) {
+    background-color: #c9c9c9;
+    border-radius: 100%;
+    margin: 2px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    -webkit-transform: translate(0,-6.25px);
+    transform: translate(0,-6.25px);
+    top: 25px;
+    left: 70px
+}
+
+
+
+.hcl-company
+	max-width 1000px
+	margin 0 auto
+	h4
+		font-size 24px
+		color #000
+		font-weight normal
+		line-height 1
+	.shell
+		margin-top 0
+	.list
+		border-top 1px solid #e4e6eb
+		.item
+			padding 20px
+			border 1px solid #e4e6eb
+			border-top none
+			&:hover
+				background #f8f7f7
+				h5
+					color #62b883
+				a.btn-detalis
+					background #4aa46d
+			[class*="cell-"]+[class*="cell-"]
+				margin-top 0
+			h5
+				font-size 18px
+				color #00020a
+				font-weight normal
+				line-height 1
+			.date
+				font-size 14px
+				color #666666
+				line-height 18px
+				@media(max-width 768px)
+					padding-top 10px
+					text-align left
+				i
+					padding 0 20px
+					font-style normal
+		.range+.range
+			margin-top 20px
+			@media(max-width 768px)
+				margin-top 10px
+		p
+			font-size 14px
+			color #666
+			line-height 1.5
+		a.btn-detalis
+			display block
+			width 80px
+			height 28px
+			font-size 14px
+			color #fff
+			background #62b883
+			border-radius 14px
+			text-align center
+			line-height 28px
+			@media(max-width 768px)
+				margin-top 10px
+	.ben-load-more
+		display block
+		width 165px
+		height 48px
+		line-height 48px
+		text-align center
+		color #62b883
+		font-size 14px
+		border 1px solid #62b883
+		border-radius 5px
+		margin 0 auto
+
+
+.hcl-support
+	.wrap:nth-child(odd)
+		background #f8f7f7
+	.wrap:nth-child(even)
+		background #fff
+	.wrap
+		padding-top 40px
+		padding-bottom 40px
+		.mw1000
+			max-width 1000px
+			margin 0 auto
+		h4
+			font-size 24px
+			color #000
+			font-weight normal
+			line-height 1
+		p
+			padding 15px 0 60px
+			margin 0
+			font-size 18px
+			color #00020a
+			line-height 1
+		.down-list
+			margin-bottom 20px
+			font-size 14px
+			color #000
+			padding 0 20px
+			line-height 70px
+			border 1px solid #e4e6eb
+			background #fff url('../img/pdf.jpg') right 20px center no-repeat
+		.page-control
+			float right
+			padding 30px 0
+			a
+				float left
+				width 34px
+				height 34px
+				font-size 16px
+				color #000
+				line-height 34px
+				text-align center
+				border-radius 5px
+				margin 0 4px
+				&.number
+					background #e2e2e2
+					&:hover
+					&.active
+						background #62b883
+						color #fff
+				&.next
+					background url('../img/arrow-right.png') center center no-repeat
+
+
+.hcl-case-a
+	max-width 1200px
+	margin 0 auto
+	.nav
+		padding 20px 0 40px
+		font-size 14px
+		color #5fb280
+		a
+			color #000
+			padding-right 10px
+			&:after
+				content ">"
+				padding-left 5px
+	h3
+		font-size 24px
+		color #000
+		line-height 1
+		font-weight normal
+	.content
+		font-size 14px
+		color #00020a
+		.pic
+			padding 50px 0 100px
+			img
+				display block
+				width 100%
+				
+		
+.bd-t-b
+	margin 30px 0
+	border-top 1px solid #e4e6eb
+	border-bottom 1px solid #e4e6eb
+	.more-info
+		text-align center
+		font-size 14px
+		color #666
+		line-height 54px
+		padding 0 10px
