@@ -549,3 +549,86 @@ body
 .hcl-head
 	h3
 		font-size 30px
+
+
+
+.hcl-join
+	max-width 1000px
+	margin 0 auto
+	h4
+		font-size 24px
+		color #000
+		font-weight normal
+		text-align center
+	.range
+		margin-top 0
+	.wrap
+		position relative
+		border 1px solid #e4e6eb
+		&.active
+			.arrow
+				background-image url('../img/toogle-active.png')
+		h5
+			font-size 18px
+			color #00020a
+			line-height 60px
+			font-weight normal
+		p
+			margin 0
+			font-size 16px
+			color #62b883
+			line-height 34px
+		.title
+			padding 0 25px
+			padding-bottom 20px
+		.content
+			padding 0 25px 50px
+			color #666
+			font-size 14px
+			display none
+			h6
+				margin 0
+				padding-bottom 24px
+				line-height 2
+			p
+				line-height 24px
+				color #666
+				&+h6
+					padding-bottom 0
+					padding-top 30px
+		.arrow
+			position absolute
+			width 31px
+			height 31px
+			background url('../img/toogle-.png') center center/100% 100% no-repeat
+			transition 0.3s
+			right 30px
+			bottom 44px
+		&+.wrap
+			border-top none
+
+
+.hcl-contact
+	max-width 800px
+	margin 0 auto
+	h4
+		font-size 24px
+		color #63bb85
+		line-height 1
+		font-weight normal
+		text-align center
+	p
+		font-size 16px
+		color #00020a
+		line-height 48px
+		margin 0
+		.icon
+			display inline-block
+			width 60px
+			height 48px
+			line-height 48px
+			background  url() center center no-repeat
+			vertical-align middle
+		a
+			color #63bb85
+			text-decoration underline
