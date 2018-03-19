@@ -1,5 +1,7 @@
 body
 	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-family: 'Microsoft YaHei', Helvetica, Arial, sans-serif 
 .hcl-head
 	height 222px
 	background url(../img/head-bg.jpg) left top /auto 100% repeat-x
@@ -497,7 +499,7 @@ body
 
 
 .hcl-case-a
-	max-width 1200px
+	max-width 1000px
 	margin 0 auto
 	.nav
 		padding 20px 0 40px
@@ -565,7 +567,9 @@ body
 	.wrap
 		position relative
 		border 1px solid #e4e6eb
+		transition 0.3s
 		&.active
+			background #f8f7f7
 			.arrow
 				background-image url('../img/toogle-active.png')
 		h5
@@ -590,9 +594,13 @@ body
 				margin 0
 				padding-bottom 24px
 				line-height 2
+				font-size 14px
+				font-weight bold
 			p
 				line-height 24px
 				color #666
+				font-size 14px
+				font-weight 300
 				&+h6
 					padding-bottom 0
 					padding-top 30px
